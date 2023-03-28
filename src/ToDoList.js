@@ -13,7 +13,7 @@ const ToDoList = ({ todos, addTodo, toggleTodo, deleteTodo }) => {
   };
 
   return (
-    <div>
+    <div className="no_back">
       <form onSubmit={handleSubmit}>
         <input
           type="text"

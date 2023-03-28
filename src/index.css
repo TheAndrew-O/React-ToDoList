@@ -1,3 +1,6 @@
+*{
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,3,85,1) 98%);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.backdrop {
+  background: none;
+  z-index: 1;
+  position: relative;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+.todo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+.Particle_background{
+  z-index: -1;
+  position: fixed;
+  background: none;
+}
+
+h1, ul, li, input, button, form, .no_back{
+  background: none;
+}
+
+.webgl{
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
 }
