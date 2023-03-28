@@ -41,6 +41,7 @@ code {
 
 h1, ul, li, input, button, form, .no_back{
   background: none;
+  color: white;
 }
 
 .webgl{

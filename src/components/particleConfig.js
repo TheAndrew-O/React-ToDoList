@@ -67,8 +67,13 @@ const particlesConfig = {
       detect_on: "canvas",
       events: {
         onhover: {
-          enable: false,
-          mode: "repulse"
+          enable: true,
+          mode: "grab",
+          parallax: {
+            enable: true,
+            force: 60,
+            smooth: 10
+          }
         },
         onclick: {
           enable: false,
@@ -80,7 +85,7 @@ const particlesConfig = {
         grab: {
           distance: 400,
           line_linked: {
-            opacity: 1
+            opacity: 0
           }
         },
         bubble: {
